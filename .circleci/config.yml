@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Test Cases
           command: npm test
-      - build:
+      - run:
           name: Build App
           command: npm run build
 
