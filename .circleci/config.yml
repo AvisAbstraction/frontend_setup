@@ -16,7 +16,8 @@ commands:
 
 executors:
   app-executor:
-    docker: circleci/node:12.9.1-browsers
+    docker: 
+      - image: circleci/node:12.9.1-browsers
 
 jobs:
   build-app:
