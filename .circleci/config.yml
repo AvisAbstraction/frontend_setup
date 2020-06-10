@@ -16,14 +16,12 @@ commands:
 
 executors:
   app-executor:
-    docker: 
+    docker:
       - image: circleci/node:12.9.1-browsers
 
 jobs:
   build-app:
     executor: app-executor
-    steps:
-      - run: echo using app-executor
     steps:
       - build-test
 
