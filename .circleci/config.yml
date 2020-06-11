@@ -19,6 +19,9 @@ jobs:
       - run:
           name: Build App
           command: npm run build
+      - run:
+          name: Deploy App
+          command: npm run netlify:deploy
 
 workflows:
   build-workflow:
